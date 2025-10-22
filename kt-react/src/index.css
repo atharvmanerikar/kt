@@ -1,0 +1,115 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* --- Kaizen custom sections --- */
+/* Trust bar */
+.trust-bar { background: #ffffff; border-top: 1px solid #eef4ff; border-bottom: 1px solid #eef4ff; }
+.trust-bar-inner { display: flex; gap: 2rem; align-items: center; justify-content: space-between; padding: 1.25rem 0; flex-wrap: wrap; }
+.trust-text { color: #6c757d; font-weight: 600; }
+.trust-logos { display: grid; grid-auto-flow: column; gap: 1.5rem; overflow: auto; scrollbar-width: none; }
+.trust-logos::-webkit-scrollbar { display: none; }
+.trust-logo { color: #6c757d; background: #f8fbff; border: 1px dashed #d6e6ff; padding: .6rem .9rem; border-radius: 999px; font-size: .9rem; white-space: nowrap; }
+
+/* Highlights */
+.highlights { background: #ffffff; }
+.highlight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
+.highlight-card { background:#fff; padding: 1.75rem; border-radius: 16px; border: 1px solid #e8f1ff; box-shadow: 0 6px 20px rgba(0,123,255,.06); transition: transform .25s, box-shadow .25s; }
+.highlight-card:hover { transform: translateY(-4px); box-shadow: 0 12px 26px rgba(0,123,255,.12); }
+.highlight-icon { width: 52px; height: 52px; display:flex; align-items:center; justify-content:center; border-radius:12px; background: linear-gradient(135deg, #e9f3ff, #f3f9ff); margin-bottom: .9rem; font-size:1.4rem; }
+.highlight-card h3 { font-size: 1.15rem; margin: 0 0 .4rem; }
+.highlight-card p { color: #6c757d; margin: 0; }
+
+/* Stats */
+.stats { background: linear-gradient(180deg, #f7fbff, #ffffff); }
+.stats-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap: 1rem; }
+.stat-card { background:#fff; padding: 2rem 1.5rem; border-radius: 16px; border: 1px solid #e8f1ff; text-align:center; box-shadow: 0 6px 20px rgba(0,123,255,.06); }
+.stat-value { font-size: 2rem; font-weight: 800; color:#0056b3; letter-spacing: -0.5px; }
+.stat-label { color:#6c757d; margin-top: .25rem; font-weight: 500; }
+
+/* Testimonials */
+.testimonials { background:#ffffff; }
+.testimonial-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 1.5rem; }
+.testimonial-card { background:#ffffff; border:1px solid #e8f1ff; border-radius:16px; padding: 1.5rem; box-shadow: 0 6px 20px rgba(0,123,255,.06); }
+.testimonial-card blockquote { margin:0 0 .75rem; color:#243b53; line-height:1.6; font-size: 1rem; }
+.testimonial-card figcaption { color:#6c757d; font-size:.95rem; }
+
+/* Secondary CTA */
+.secondary-cta { background: linear-gradient(135deg, #e9f3ff, #fdfdff); border-top: 1px solid #eef4ff; }
+.secondary-cta-inner { display:flex; align-items:center; justify-content: space-between; gap: 1.5rem; padding: 2rem 0; }
+.secondary-cta h2 { margin: 0 0 .4rem; font-size: 1.8rem; color:#0b63ce; }
+.secondary-cta p { margin: 0; color:#4d6480; }
+
+/* Responsiveness for custom sections */
+@media (max-width: 992px) {
+  .secondary-cta-inner { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 768px) {
+  .trust-bar-inner { gap: 1rem; }
+  .trust-text { width: 100%; }
+}
