@@ -14,21 +14,21 @@ export default function Contact() {
               <span className="contact-icon">📧</span>
               <div>
                 <h3>Email Us</h3>
-                <p>hello@kaizentechnolabs.com</p>
+                <p>kaizentechnolabs1996@gmail.com</p>
               </div>
             </div>
             <div className="contact-item">
               <span className="contact-icon">📞</span>
               <div>
                 <h3>Call Us</h3>
-                <p>+1 (555) 123-4567</p>
+                <p>+91 9033991168</p>
               </div>
             </div>
             <div className="contact-item">
               <span className="contact-icon">📍</span>
               <div>
                 <h3>Visit Us</h3>
-                <p>123 Tech Street, Silicon Valley, CA 94025</p>
+                <p>Rajkot, Gujarat, India</p>
               </div>
             </div>
           </div>
