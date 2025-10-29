@@ -54,7 +54,7 @@ export default function Navbar() {
             }}
           >
             <img 
-              src="/kaizen-technolabs-logo.png" 
+              src={`${import.meta.env.BASE_URL}kaizen-technolabs-logo.png`} 
               alt="Kaizen Technolabs" 
               className="logo-img" 
               style={{
@@ -90,10 +90,10 @@ export default function Navbar() {
         >
           {[
             { to: "/", label: "Home" },
-            { to: "who-we-are", label: "Who We Are" },
-            { to: "work", label: "Work" },
-            { to: "what-we-do", label: "What We Do" },
-            { to: "contact", label: "Let's Have Coffee Together" }
+            { to: "/who-we-are", label: "Who We Are" },
+            { to: "/work", label: "Work" },
+            { to: "/what-we-do", label: "What We Do" },
+            { to: "/contact", label: "Let's Have Coffee Together" }
           ].map((item, index) => (
             <li key={index}>
               <NavLink 
@@ -221,10 +221,10 @@ export default function Navbar() {
             }}>
               {[
                 { to: "/", label: "Home" },
-                { to: "who-we-are", label: "Who We Are" },
-                { to: "work", label: "Work" },
-                { to: "what-we-do", label: "What We Do" },
-                { to: "contact", label: "Let's Have Coffee Together" }
+                { to: "/who-we-are", label: "Who We Are" },
+                { to: "/work", label: "Work" },
+                { to: "/what-we-do", label: "What We Do" },
+                { to: "/contact", label: "Let's Have Coffee Together" }
               ].map((item, index) => (
                 <li key={index}>
                   <NavLink
