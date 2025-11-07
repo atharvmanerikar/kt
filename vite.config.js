@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/kt/',
+  base: '/',
   plugins: [react({
     // Use the new JSX transform
     jsxImportSource: 'react',
@@ -28,7 +28,7 @@ export default defineConfig({
   // Build configuration
   build: {
     target: 'es2015',
-    minify: 'terser',
+    minify: true,
     sourcemap: false,
     outDir: 'dist',
     assetsDir: 'assets',
